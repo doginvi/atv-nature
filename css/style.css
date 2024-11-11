@@ -1,0 +1,103 @@
+/*------------------------------------------------------------------
+                                GERAL
+------------------------------------------------------------------*/
+
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: calc(11px + 0.390625vw);
+    a{
+        text-decoration: none;
+        color: white;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*------------------------------------------------------------------
+                                TOPO
+------------------------------------------------------------------*/
+
+header{
+    background-color: #3B8686;
+    padding: 20px 10vw 20px 10vw;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        ul{
+            display: flex;
+            li{
+                padding: 5px 0 0 60px;
+                a{
+                    color: #FFFFFF;
+                }
+                .menu-atual{
+                    background: rgba(255, 255, 255, 0.2);
+                    padding: 5px 25px 5px 25px;
+                    border-radius: 30px;   
+                }
+            }
+        }
+    }
+}
+
+/*------------------------------------------------------------------
+                                BANNER
+------------------------------------------------------------------*/
+
+section.banner{
+    padding: 15vw 10vw 5vw 10vw;
+    background: linear-gradient(rgba(121, 184, 154, 0.2), rgba(121, 184, 154, 0.2)), url(../images/back-banner.png) no-repeat center center;
+    background-size: cover;
+    h2{
+        font-size: 3rem;
+        background: rgba(59, 134, 134, 0.5);
+        color: white;
+        width: 36.583115%;
+        padding: 10px 20px 10px 20px;
+    }
+}
+
+/*------------------------------------------------------------------
+                                SERVICOS
+------------------------------------------------------------------*/
+
+section.servicos{
+    text-align: center;
+    ul{
+        display: flex;
+        li{
+            margin: 0 4vw 0 4vw;
+            i{
+                color: #3B8686;
+                font-size: 3vw;
+            }
+            p{
+                color: #747474;
+                font-size: 16px;
+                padding: 0.5vw 0 2vw 0;
+            }
+            a{
+                background-color: #3B8686;
+                padding: 9px 30px 9px 30px;
+            }
+        }
+    }
+}
