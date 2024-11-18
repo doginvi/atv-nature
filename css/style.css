@@ -2,10 +2,11 @@
                                 GERAL
 ------------------------------------------------------------------*/
 
-body{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: calc(11px + 0.390625vw);
-    a{
+
+    a {
         text-decoration: none;
         color: white;
     }
@@ -35,23 +36,28 @@ body{
                                 TOPO
 ------------------------------------------------------------------*/
 
-header{
+header {
     background-color: #3B8686;
     padding: 20px 10vw 20px 10vw;
-    nav{
+
+    nav {
         display: flex;
         justify-content: space-between;
-        ul{
+
+        ul {
             display: flex;
-            li{
+
+            li {
                 padding: 5px 0 0 60px;
-                a{
+
+                a {
                     color: #FFFFFF;
                 }
-                .menu-atual{
+
+                .menu-atual {
                     background: rgba(255, 255, 255, 0.2);
                     padding: 5px 25px 5px 25px;
-                    border-radius: 30px;   
+                    border-radius: 30px;
                 }
             }
         }
@@ -62,11 +68,12 @@ header{
                                 BANNER
 ------------------------------------------------------------------*/
 
-section.banner{
+section.banner {
     padding: 15vw 10vw 5vw 10vw;
     background: linear-gradient(rgba(121, 184, 154, 0.2), rgba(121, 184, 154, 0.2)), url(../images/back-banner.png) no-repeat center center;
     background-size: cover;
-    h2{
+
+    h2 {
         font-size: 3rem;
         background: rgba(59, 134, 134, 0.5);
         color: white;
@@ -79,24 +86,154 @@ section.banner{
                                 SERVICOS
 ------------------------------------------------------------------*/
 
-section.servicos{
-    text-align: center;
-    ul{
+section.servicos {
+    padding: 5vw 10vw 5vw 10vw;
+
+    ul {
         display: flex;
-        li{
-            margin: 0 4vw 0 4vw;
-            i{
+        justify-content: space-between;
+        text-align: center;
+
+        li {
+            width: 25%;
+
+            span {
+                font-size: 3.5rem;
                 color: #3B8686;
-                font-size: 3vw;
             }
-            p{
+
+            h3 {
+                font-size: 1.4rem;
+                font-weight: bold;
+                margin: 20px 0 25px 0;
+            }
+
+            p {
                 color: #747474;
-                font-size: 16px;
-                padding: 0.5vw 0 2vw 0;
+                margin: 0 0 30px 0
             }
-            a{
+
+            a {
                 background-color: #3B8686;
-                padding: 9px 30px 9px 30px;
+                padding: 10px 35px 10px 35px;
+                display: inline-block;
+            }
+        }
+    }
+}
+
+/*------------------------------------------------------------------
+                                CANOA
+------------------------------------------------------------------*/
+
+section.canoa {
+    background: linear-gradient(rgba(121, 189, 154, 0.5), rgba(121, 189, 154, 0.5)), url(../images/back-numeros.png) no-repeat center center;
+    background-size: cover;
+    padding: 0.5vw 0 0.5vw 0;
+
+    ul {
+        margin: 3vw 10vw 3vw 10vw;
+        display: flex;
+        text-align: center;
+        justify-content: space-between;
+
+        li {
+            color: white;
+            width: 10%;
+
+            span {
+                font-size: 3rem;
+            }
+
+            p {
+                margin: 10px 0 0 0;
+                font-size: 1.9rem;
+            }
+        }
+    }
+}
+
+/*------------------------------------------------------------------
+                            POSSIBILIDADES
+------------------------------------------------------------------*/
+
+section.atividades {
+    width: 70%;
+    margin: 10vw 10vw 0 15vw;
+    display: flex;
+    justify-content: space-between;
+    div.texto{
+        h3 {
+            font-size: 2.5rem;
+            color: #0B486B;
+            margin: 0 0 30px 0;
+        }
+
+        p {
+            width: 75%;
+            color: #747474;
+            font-weight: 500;
+            font-size: 20px;
+        }
+
+        >p{
+            a {
+                padding: 15px 35px 10px 35px;
+                margin: 30px 15px 0 0;
+                background-color: #0B486B;
+                display: inline-block;
+            }
+        }
+    }
+
+}
+
+/*------------------------------------------------------------------
+                            FOOTER
+------------------------------------------------------------------*/
+
+footer{
+    margin: 7vw 0 0 0;
+    background-color: #3B8686;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw 8vw 1vw 8vw;
+    div.direitos{
+        nav{
+            ul{
+                display: flex;
+                margin: 0 0 25px 0;
+                li{
+                    font-size: 2.2rem;
+                    margin: 0 15px 0 0;
+
+                }
+            }
+        }
+    }
+    div.contato{
+        p{
+            margin: 0 0 7px 0;
+        }
+        ul{
+            li{
+                p{
+                    font-size: 1.3rem;
+                    span{
+                        margin: 0 2px 0 0;
+                    }
+                }
+            }
+        }
+    }
+    div.navegacao{
+        nav{
+            ul{
+                li{
+                    text-align: right;
+                    margin: 0 0 1vw 0;
+                }
             }
         }
     }
